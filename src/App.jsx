@@ -180,7 +180,7 @@ function Item({ task, onToggle, onDelete }) {
 function Footer({ items }) {
   if (!items.length) {
     return (
-      <footer className="w-screen h-[10vh] bg-color2 flex items-center justify-center text-color5 text-base sm:text-xl px-4 text-center">
+      <footer className="w-screen h-[10vh] bg-color2 flex items-center justify-center text-color5 text-base sm:text-xl px-4 text-center sticky">
         <p>Please add some tasks to the task tracker.</p>
       </footer>
     );
@@ -191,7 +191,7 @@ function Footer({ items }) {
   const remTasks = numTasks - doneTasks;
 
   return (
-    <footer className="w-screen h-[10vh] bg-color2 flex items-center justify-center text-color5 text-base sm:text-xl px-4 text-center">
+    <footer className="w-screen h-[10vh] bg-color2 flex items-center justify-center text-color5 text-base sm:text-xl px-4 text-center sticky">
       <p>
         You have completed {doneTasks} task{doneTasks !== 1 ? "s" : ""}.{" "}
         {remTasks} remaining.
