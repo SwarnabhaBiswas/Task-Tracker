@@ -1,5 +1,6 @@
 body{
     background-color: #ebeaebff;
+    max-width:100vh;
 }
 form{
     display: flex;
